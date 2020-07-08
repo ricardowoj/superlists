@@ -20,7 +20,7 @@ class NewVisitorTest(unittest.TestCase):
         # Ela percebe que o título da página e o cabeçalho mencionam list de
         # tarefas (To-Do lists)
         self.assertIn('To-Do', self.browser.title)
-        header_text = self.browser.find_element_by_tag('h1').text
+        header_text = self.browser.find_element_by_tag_name('h1').text
         self.assertIn('To-Do', header_text)
 
         # Ela é convidada a inserir um item de tarefa imediatamente
